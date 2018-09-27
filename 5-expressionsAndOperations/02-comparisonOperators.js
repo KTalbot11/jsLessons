@@ -12,7 +12,7 @@ console.log(3 === '3');
 console.log(0 == false);
 
 //not equal
-console.log ('4' != 4); //doesnt care about tyor, output,->
+console.log ('4' != 4); //doesnt care about type, output,->
 
 //strict not equal
 console.log('3' !== 3);//checks type and value
