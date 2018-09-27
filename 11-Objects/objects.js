@@ -23,7 +23,98 @@ let netflix = {
     season3: {}
    };
 
-   console.log(netflix.name); // can call parts of an object by their string
-console.log(netflix.season1.seasonInfo.episodeInfo[0])
+   //console.log(netflix.name); // can call parts of an object by their string
+//console.log(netflix.season1.seasonInfo.episodeInfo[0])
 
 
+//
+/*
+console.log(netflix.season1.seasonInfo.episodeInfo[5].episode);
+console.log(netflix.season1.seasonInfo.episodeInfo[5].episodeName);
+*/
+//
+
+
+let spaceJam = {
+    toonSquad: {
+      human: 'Michael Jordan',
+      rabbit1: 'Bugs Bunny',
+      rabbit2: 'Lola Bunny',
+      duck: 'Daffy Duck',
+      tDevil: 'Tasmanian Devil',
+      bird: 'Tweety',
+      cat: 'Sylvester',
+      pig: 'Porky Pig'
+    },
+    monstars: {
+      0: 'Bupkus',
+      1: 'Bang',
+      2: 'Nawt',
+      3: 'Pound',
+      4: 'Blanko'
+    },
+    nbaPlayers: {
+      phoenixSuns: 'Charles Barkley',
+      newJerseyNets: 'Shawn Bradley',
+      newYorkNicks: 'Patrick Ewing',
+      charlotteHornets1: 'Larry Johnson',
+      charlotteHornets2: 'Muggsy Bogues'
+    }
+  }
+/*
+  console.log(Object.keys(spaceJam)); //Object.keys() gives a condenced list of items inside the object
+  console.log(Object.keys(spaceJam.monstars));
+  console.log(spaceJam.nbaPlayers.phoenixSuns);
+  console.log(Object.values(spaceJam.nbaPlayers));
+*/
+  
+//square bracket notation
+/*
+  let garden = {
+      vegetable: 'zucchini',
+      flower: 'sunflower',
+      fruit: 'grape',
+      water: true,
+      sun: true,
+      size: 10,
+    };
+*/
+    //console.log(garden. vegetable);
+
+    let value = 'vegetable';
+
+    //console.log(garden.value,garden[value]);
+    //console.log(garden.value,garden['vegetable']);
+
+    /*
+    let baking = {};
+    baking['zucchini'] = 'better make some bread!';
+    console,log(Object.values(baking));
+    baking.cauliflower = 'get some hot sauce and cheese';
+
+    console.log(Object.keys(baking));
+*/
+/*
+let baking = {};
+baking['zucchini'] = 'better make some bread!';
+// these two have the same output
+console.log(baking[garden['vegetable']]);
+console.log(baking['zucchini']);
+*/
+
+let garden = {
+    vegetable: 'zucchini',
+    flower: 'sunflower',
+    fruit: 'grape',
+    water: true,
+    sun: true,
+    size: 10,
+  };
+
+let key = water;
+  
+Object.keys(garden).forEach(g => {
+      if( key === g ){
+          console.log(garden[key]);
+      }
+  })
